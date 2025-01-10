@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="imagens/lucianocosta-01.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <p>
+                        <label for="iemail"><i class="fa fa-user" style="font-size:32px; padding: 5px 0px 5px 10px;"></i></label>
+                        <input class="dados" type="email" name="email" id="iemail" placeholder="Digite seu e-mail" required autocomplete="email">
+                    </p>
+                    <p>
+                        <label for="isenha"><i class="fa fa-lock" style="font-size:32px; padding: 5px 0px 5px 13px;"></i></label>
+                        <input class="dados" type="password" name="senha" id="isenha" placeholder="Digite sua senha" required autocomplete="new-password" minlength="8" maxlength="20">
+                    </p>
+                    <input id="entrar" type="submit" value="Entrar">
+                    <input id="esqueci" type="button" value="Esqueci a senha">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

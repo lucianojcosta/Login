@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #005EB7;
+    --cor2: #95b5d3;
+    --cor3: #042047;
+
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor1);
+}
+
+section#login {
+    background-color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 250px;
+    height: 520px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 22px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+    transition: width 0.3s, height .3s;
+    transition-timing-function: ease;
+}
+
+div#imagem {
+    display: block;
+    width: 100%;
+    height: 40%;
+    background-image: url(../imagens/lucianocosta-02.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: cover;
+}
+
+div#formulario {
+    display: block;
+}
+
+div#formulario > h1 {
+    padding: 15px 0px 8px 0px;
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: center;
+}
+
+div#formulario > p {
+    padding: 0px 0px 8px 0px;
+    text-align: center;
+    margin: auto;
+    width: 95%;
+    font-size: 0.8em;
+}
+
+section > div > form > p {
+    background-color: var(--cor1);
+    margin: auto;
+    margin-top: 6px;
+    width: 92%;
+    height: 42px;
+    border-radius: 10px;
+}
+
+i {
+    color: var(--cor3)
+}
+
+input.dados {
+    background-color: var(--cor2);
+    color: var(--cor3);
+    font-size: 1em;
+    width: 79%;
+    height: 85%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 10px;
+    transform: translateY(-6px) translateX(8px)
+}
+
+input.dados:focus-within {
+    background-color: white;
+}
+
+
+input#entrar {
+    background-color: var(--cor3);
+    color: white;
+    display: block;
+    margin: auto;
+    margin-top: 6px;
+    text-align: center;
+    width: 92%;
+    height: 42px;
+    font-size: 1em;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+input#entrar:hover {
+    background-color: var(--cor1);
+    cursor: pointer;
+}
+
+
+input#esqueci {
+    background-color: white;
+    width: 92%;
+    height: 42px;
+    display: block;
+    margin: auto;
+    margin-top: 6px;
+    text-align: center;
+    font-size: 1em;
+    border: 1px solid var(--cor3);
+    border-radius: 8px;
+}
+
+input#esqueci:hover {
+    background-color: var(--cor2);
+    color: var(--cor3);
+    cursor: pointer;
+}
